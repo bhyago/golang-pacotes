@@ -21,7 +21,6 @@ type ViaCEP struct {
 func main() {
 	http.HandleFunc("/", BuscaCEPHandler)
 	http.ListenAndServe(":3333", nil)
-
 }
 
 func BuscaCEPHandler(w http.ResponseWriter, r *http.Request) {
